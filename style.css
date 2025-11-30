@@ -467,6 +467,102 @@ body {
   color: #374151;
 }
 
+.business-model-section {
+  background-color: white;
+  padding: 3rem 1rem;
+  border-top: 4px solid #f59e0b;
+}
+
+.business-intro {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+.business-description {
+  font-size: 1.125rem;
+  color: #374151;
+  line-height: 1.8;
+}
+
+.revenue-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.revenue-card {
+  background: linear-gradient(to bottom right, #fef3c7, #fde68a);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.revenue-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.revenue-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.revenue-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #78350f;
+  margin-bottom: 0.75rem;
+}
+
+.revenue-text {
+  color: #374151;
+  line-height: 1.6;
+}
+
+.revenue-text strong {
+  color: #78350f;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.value-proposition {
+  background-color: #059669;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  color: white;
+}
+
+.value-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.value-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.value-point {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.value-point strong {
+  display: block;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: #fcd34d;
+}
+
 .site-footer {
   background-color: #78350f;
   color: white;
@@ -579,7 +675,8 @@ body {
   .products-section,
   .farmers-section,
   .testimonials-section,
-  .why-section {
+  .why-section,
+  .business-model-section {
     padding: 2rem 1rem;
   }
 
@@ -603,6 +700,22 @@ body {
   .footer-column {
     text-align: center;
   }
+
+  .business-description {
+    font-size: 1rem;
+  }
+
+  .revenue-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .value-points {
+    grid-template-columns: 1fr !important;
+  }
+
+  .value-title {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -612,6 +725,15 @@ body {
 
   .features-grid,
   .farmers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .revenue-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .value-points {
     grid-template-columns: repeat(2, 1fr);
   }
 }
