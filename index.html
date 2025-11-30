@@ -1,302 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ukambani Honey Hub - Pure Authentic Honey from Ukambani Region</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
-    <!-- HEADER (Following Week 3/4 Structure) -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Ukambani Honey Hub - Pure Authentic Honey from Ukambani Region
+    </title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header class="site-header">
-        <div class="header-container">
-            <!-- Logo/Brand -->
-            <div class="brand">
-                <span class="brand-icon">🍯</span>
-                <span class="brand-name">Ukambani Honey Hub</span>
-            </div>
-            
-            <!-- Search Bar - Hidden on mobile -->
-            <div class="search-container mobile-hide">
-                <input 
-                    type="search" 
-                    placeholder="Search honey products..." 
-                    class="search-input"
-                >
-            </div>
-            
-            <!-- Right Icons: Account & Cart -->
-            <div class="header-icons">
-                <a href="#" class="icon-link" aria-label="Account">
-                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
-                    </svg>
-                </a>
-                <a href="#" class="icon-link cart-icon" aria-label="Shopping Cart">
-                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
-                    </svg>
-                    <span class="cart-badge">3</span>
-                </a>
-            </div>
+      <div class="header-container">
+        <div class="brand">
+          <span class="brand-icon">🍯</span>
+          <span class="brand-name">Ukambani Honey Hub</span>
         </div>
-        
-        <!-- Navigation Bar -->
-        <nav class="main-nav">
-            <div class="nav-container">
-                <!-- Desktop Navigation - Hidden on mobile -->
-                <ul class="nav-links mobile-hide">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop Honey</a></li>
-                    <li><a href="#">Our Farmers</a></li>
-                    <li><a href="#">Become a Vendor</a></li>
-                    <li><a href="#">About Ukambani</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-                
-                <!-- Hamburger Menu - Visible only on mobile -->
-                <div class="hamburger-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <span class="hamburger-label">Menu</span>
-            </div>
-        </nav>
+
+        <div class="search-container mobile-hide">
+          <input
+            type="search"
+            placeholder="Search honey products..."
+            class="search-input"
+          />
+        </div>
+
+        <div class="header-icons">
+          <a href="#" class="icon-link" aria-label="Account">
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="icon-link cart-icon" aria-label="Shopping Cart">
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+              />
+            </svg>
+            <span class="cart-badge">3</span>
+          </a>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <div class="nav-container">
+          <ul class="nav-links mobile-hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop Honey</a></li>
+            <li><a href="#">Our Farmers</a></li>
+            <li><a href="#">Become a Vendor</a></li>
+            <li><a href="#">About Ukambani</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+
+          <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span class="hamburger-label">Menu</span>
+        </div>
+      </nav>
     </header>
-    
-    <!-- HERO SECTION -->
+
     <section class="hero-section">
-        <div class="container">
-            <h1 class="hero-title">
-                Pure Authentic Honey from the Heart of Ukambani
-            </h1>
-            <p class="hero-subtitle">
-                Connecting Ukambani honey farmers directly to your table. 100% natural, ethically sourced, supporting local communities.
-            </p>
-            
-            <!-- CTA Buttons - Finger-friendly on mobile (44x44px) -->
-            <div class="cta-buttons">
-                <button class="btn btn-primary">Shop Honey Now</button>
-                <button class="btn btn-secondary">Join as Farmer</button>
-            </div>
+      <div class="container">
+        <h1 class="hero-title">
+          Pure Authentic Honey from the Heart of Ukambani
+        </h1>
+        <p class="hero-subtitle">
+          Connecting Ukambani honey farmers directly to your table. 100%
+          natural, ethically sourced, supporting local communities.
+        </p>
+
+        <div class="cta-buttons">
+          <button class="btn btn-primary">Shop Honey Now</button>
+          <button class="btn btn-secondary">Join as Farmer</button>
         </div>
+      </div>
     </section>
-    
-    <!-- VERIFIED BADGE SECTION -->
+
     <section class="verified-section">
-        <div class="container">
-            <div class="verified-badge">
-                <svg class="verified-icon" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <h2>Verified Ukambani Honey - Traceable to the Source</h2>
-            </div>
+      <div class="container">
+        <div class="verified-badge">
+          <svg class="verified-icon" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              fill-rule="evenodd"
+              d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <h2>Verified Ukambani Honey - Traceable to the Source</h2>
         </div>
+      </div>
     </section>
-    
-    <!-- FEATURED PRODUCTS SECTION - Responsive Grid -->
+
     <section class="products-section">
-        <div class="container">
-            <h2 class="section-title">Featured Honey Products</h2>
-            
-            <!-- Product Grid - Stacks on mobile (mobile-stack class from Week 4) -->
-            <div class="product-grid mobile-stack">
-                
-                <!-- Product Card 1 -->
-                <article class="product-card">
-                    <div class="product-image">🍯</div>
-                    <div class="product-info">
-                        <span class="product-badge">Verified</span>
-                        <h3 class="product-name">Pure Raw Honey - 1kg</h3>
-                        <p class="product-location">From Machakos County</p>
-                        <div class="product-footer">
-                            <span class="product-price">KES 800</span>
-                            <button class="btn btn-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Product Card 2 -->
-                <article class="product-card">
-                    <div class="product-image">🍯</div>
-                    <div class="product-info">
-                        <span class="product-badge">Verified</span>
-                        <h3 class="product-name">Comb Honey - 500g</h3>
-                        <p class="product-location">From Kitui County</p>
-                        <div class="product-footer">
-                            <span class="product-price">KES 1,200</span>
-                            <button class="btn btn-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Product Card 3 -->
-                <article class="product-card">
-                    <div class="product-image">🫚</div>
-                    <div class="product-info">
-                        <span class="product-badge">Verified</span>
-                        <h3 class="product-name">Ginger Honey - 750g</h3>
-                        <p class="product-location">From Makueni County</p>
-                        <div class="product-footer">
-                            <span class="product-price">KES 950</span>
-                            <button class="btn btn-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Product Card 4 -->
-                <article class="product-card">
-                    <div class="product-image">🐝</div>
-                    <div class="product-info">
-                        <span class="product-badge">Verified</span>
-                        <h3 class="product-name">Bee Pollen - 250g</h3>
-                        <p class="product-location">From Machakos County</p>
-                        <div class="product-footer">
-                            <span class="product-price">KES 600</span>
-                            <button class="btn btn-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                </article>
-                
+      <div class="container">
+        <h2 class="section-title">Featured Honey Products</h2>
+
+        <div class="product-grid mobile-stack">
+          <article class="product-card">
+            <img
+              src="https://images-cdn.ubuy.co.in/66304907326b36578e6cfd53-honey-gardens-apitherapy-raw-honey.jpg"
+              alt="Pure Raw Honey"
+              class="product-image-real"
+            />
+            <div class="product-info">
+              <span class="product-badge">Verified</span>
+              <h3 class="product-name">Pure Raw Honey - 1kg</h3>
+              <p class="product-location">From Machakos County</p>
+              <div class="product-footer">
+                <span class="product-price">KES 800</span>
+                <button class="btn btn-cart">Add to Cart</button>
+              </div>
             </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400&h=300&fit=crop"
+              alt="Comb Honey"
+              class="product-image-real"
+            />
+            <div class="product-info">
+              <span class="product-badge">Verified</span>
+              <h3 class="product-name">Comb Honey - 500g</h3>
+              <p class="product-location">From Kitui County</p>
+              <div class="product-footer">
+                <span class="product-price">KES 1,200</span>
+                <button class="btn btn-cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="https://www.alexascuisine.com/wp-content/uploads/2017/07/Ginger-Honey-Lemonade-Ingredients.jpg"
+              alt="Ginger Honey"
+              class="product-image-real"
+            />
+            <div class="product-info">
+              <span class="product-badge">Verified</span>
+              <h3 class="product-name">Ginger Honey - 750g</h3>
+              <p class="product-location">From Makueni County</p>
+              <div class="product-footer">
+                <span class="product-price">KES 950</span>
+                <button class="btn btn-cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?w=400&h=300&fit=crop"
+              alt="Bee Pollen"
+              class="product-image-real"
+            />
+            <div class="product-info">
+              <span class="product-badge">Verified</span>
+              <h3 class="product-name">Bee Pollen - 250g</h3>
+              <p class="product-location">From Machakos County</p>
+              <div class="product-footer">
+                <span class="product-price">KES 600</span>
+                <button class="btn btn-cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
         </div>
+      </div>
     </section>
-    
-    <!-- TRUSTED FARMERS SECTION -->
+
     <section class="farmers-section">
-        <div class="container">
-            <h2 class="section-title">Our Trusted Farmers</h2>
-            
-            <div class="farmers-grid mobile-stack">
-                <!-- Farmer Card 1 -->
-                <article class="farmer-card">
-                    <div class="farmer-avatar">👨‍🌾</div>
-                    <h3 class="farmer-name">John Mutua</h3>
-                    <p class="farmer-location">Machakos County</p>
-                    <p class="farmer-experience">15 years of beekeeping experience</p>
-                    <div class="farmer-rating">★★★★★</div>
-                </article>
-                
-                <!-- Farmer Card 2 -->
-                <article class="farmer-card">
-                    <div class="farmer-avatar">👩‍🌾</div>
-                    <h3 class="farmer-name">Mary Nduku</h3>
-                    <p class="farmer-location">Kitui County</p>
-                    <p class="farmer-experience">10 years of beekeeping experience</p>
-                    <div class="farmer-rating">★★★★★</div>
-                </article>
-                
-                <!-- Farmer Card 3 -->
-                <article class="farmer-card">
-                    <div class="farmer-avatar">👨‍🌾</div>
-                    <h3 class="farmer-name">Peter Kioko</h3>
-                    <p class="farmer-location">Makueni County</p>
-                    <p class="farmer-experience">12 years of beekeeping experience</p>
-                    <div class="farmer-rating">★★★★★</div>
-                </article>
-            </div>
+      <div class="container">
+        <h2 class="section-title">Our Trusted Farmers</h2>
+
+        <div class="farmers-grid mobile-stack">
+          <article class="farmer-card">
+            <div class="farmer-avatar">👨‍🌾</div>
+            <h3 class="farmer-name">John Mutua</h3>
+            <p class="farmer-location">Machakos County</p>
+            <p class="farmer-experience">15 years of beekeeping experience</p>
+            <div class="farmer-rating">★★★★★</div>
+          </article>
+
+          <article class="farmer-card">
+            <div class="farmer-avatar">👩‍🌾</div>
+            <h3 class="farmer-name">Mary Nduku</h3>
+            <p class="farmer-location">Kitui County</p>
+            <p class="farmer-experience">10 years of beekeeping experience</p>
+            <div class="farmer-rating">★★★★★</div>
+          </article>
+
+          <article class="farmer-card">
+            <div class="farmer-avatar">👨‍🌾</div>
+            <h3 class="farmer-name">Peter Kioko</h3>
+            <p class="farmer-location">Makueni County</p>
+            <p class="farmer-experience">12 years of beekeeping experience</p>
+            <div class="farmer-rating">★★★★★</div>
+          </article>
         </div>
+      </div>
     </section>
-    
-    <!-- CUSTOMER TESTIMONIALS -->
+
     <section class="testimonials-section">
-        <div class="container">
-            <h2 class="section-title">What Our Customers Say</h2>
-            
-            <div class="testimonials-grid mobile-stack">
-                <article class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">"The best honey I've ever tasted! Pure and natural. I love that I can trace it back to the farmer."</p>
-                    <p class="testimonial-author">- Sarah K., Nairobi</p>
-                </article>
-                
-                <article class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">"Supporting local farmers while getting quality products. The delivery was fast and packaging excellent!"</p>
-                    <p class="testimonial-author">- David M., Mombasa</p>
-                </article>
-            </div>
+      <div class="container">
+        <h2 class="section-title">What Our Customers Say</h2>
+
+        <div class="testimonials-grid mobile-stack">
+          <article class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "The best honey I've ever tasted! Pure and natural. I love that I
+              can trace it back to the farmer."
+            </p>
+            <p class="testimonial-author">- Sarah K., Nairobi</p>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Supporting local farmers while getting quality products. The
+              delivery was fast and packaging excellent!"
+            </p>
+            <p class="testimonial-author">- David M., Mombasa</p>
+          </article>
         </div>
+      </div>
     </section>
-    
-    <!-- WHY UKAMBANI HONEY SECTION -->
+
     <section class="why-section">
-        <div class="container">
-            <h2 class="section-title">Why Ukambani Honey?</h2>
-            
-            <div class="features-grid mobile-stack">
-                <div class="feature-item">
-                    <div class="feature-icon">🌿</div>
-                    <h3 class="feature-title">100% Natural</h3>
-                    <p class="feature-text">No additives, no processing - just pure honey from the hive</p>
-                </div>
-                
-                <div class="feature-item">
-                    <div class="feature-icon">🤝</div>
-                    <h3 class="feature-title">Support Local</h3>
-                    <p class="feature-text">Every purchase directly supports Ukambani farming families</p>
-                </div>
-                
-                <div class="feature-item">
-                    <div class="feature-icon">📍</div>
-                    <h3 class="feature-title">Traceable</h3>
-                    <p class="feature-text">QR code on every jar links to your farmer's story</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">Why Ukambani Honey?</h2>
+
+        <div class="features-grid mobile-stack">
+          <div class="feature-item">
+            <div class="feature-icon">🌿</div>
+            <h3 class="feature-title">100% Natural</h3>
+            <p class="feature-text">
+              No additives, no processing - just pure honey from the hive
+            </p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">🤝</div>
+            <h3 class="feature-title">Support Local</h3>
+            <p class="feature-text">
+              Every purchase directly supports Ukambani farming families
+            </p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">📍</div>
+            <h3 class="feature-title">Traceable</h3>
+            <p class="feature-text">
+              QR code on every jar links to your farmer's story
+            </p>
+          </div>
         </div>
+      </div>
     </section>
-    
-    <!-- FOOTER -->
+
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid mobile-stack">
-                <!-- Company Info -->
-                <div class="footer-column">
-                    <h3 class="footer-title">Ukambani Honey Hub</h3>
-                    <p class="footer-text">Connecting authentic Ukambani honey to Kenya and beyond.</p>
-                </div>
-                
-                <!-- Quick Links -->
-                <div class="footer-column">
-                    <h4 class="footer-heading">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Shop Honey</a></li>
-                        <li><a href="#">Our Farmers</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-                
-                <!-- For Vendors -->
-                <div class="footer-column">
-                    <h4 class="footer-heading">For Vendors</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Become a Vendor</a></li>
-                        <li><a href="#">Vendor Login</a></li>
-                        <li><a href="#">Pricing</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Contact -->
-                <div class="footer-column">
-                    <h4 class="footer-heading">Contact Us</h4>
-                    <ul class="footer-contact">
-                        <li>📧 info@ukambanihoney.co.ke</li>
-                        <li>📱 +254 700 123 456</li>
-                        <li>📍 Machakos, Kenya</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- Payment Methods -->
-            <div class="footer-bottom">
-                <p class="payment-info">Secure Payments via M-Pesa, Visa & Mastercard</p>
-                <p class="copyright">&copy; 2025 Ukambani Honey Hub. All Rights Reserved.</p>
-            </div>
+      <div class="container">
+        <div class="footer-grid mobile-stack">
+          <div class="footer-column">
+            <h3 class="footer-title">Ukambani Honey Hub</h3>
+            <p class="footer-text">
+              Connecting authentic Ukambani honey to Kenya and beyond.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#">Shop Honey</a></li>
+              <li><a href="#">Our Farmers</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-heading">For Vendors</h4>
+            <ul class="footer-links">
+              <li><a href="#">Become a Vendor</a></li>
+              <li><a href="#">Vendor Login</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-heading">Contact Us</h4>
+            <ul class="footer-contact">
+              <li>📧 info@ukambanihoney.co.ke</li>
+              <li>📱 +254 700 123 456</li>
+              <li>📍 Machakos, Kenya</li>
+            </ul>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <p class="payment-info">
+            Secure Payments via M-Pesa, Visa & Mastercard
+          </p>
+          <p class="copyright">
+            &copy; 2025 Ukambani Honey Hub. All Rights Reserved.
+          </p>
+        </div>
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>
