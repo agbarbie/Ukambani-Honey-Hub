@@ -18,6 +18,7 @@ body {
   padding: 0 1rem;
 }
 
+/* ===== HEADER ===== */
 .site-header {
   background: linear-gradient(to right, #d97706, #b45309);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -110,6 +111,7 @@ body {
   border-radius: 50%;
 }
 
+/* ===== NAVIGATION ===== */
 .main-nav {
   background-color: #92400e;
 }
@@ -142,11 +144,21 @@ body {
   color: #fcd34d;
 }
 
-.hamburger-menu {
+/* Week 5: Mobile Menu */
+.mobile-menu-trigger {
   display: none;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hamburger-menu {
+  display: flex;
   flex-direction: column;
   gap: 4px;
   cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0.5rem;
 }
 
 .hamburger-menu span {
@@ -154,14 +166,99 @@ body {
   height: 3px;
   background-color: white;
   border-radius: 2px;
+  transition: all 0.3s;
 }
 
 .hamburger-label {
-  display: none;
   color: white;
   font-size: 0.875rem;
+  font-weight: 500;
 }
 
+.mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 100;
+  transition: opacity 0.3s;
+}
+
+.mobile-menu-overlay.hidden {
+  display: none;
+}
+
+.mobile-menu-content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  max-width: 320px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+  overflow-y: auto;
+}
+
+.mobile-menu-content.active {
+  transform: translateX(0);
+}
+
+.mobile-menu-header {
+  background: linear-gradient(to right, #d97706, #b45309);
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-menu-header h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: color 0.3s;
+}
+
+.close-button:hover {
+  color: #fcd34d;
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.mobile-nav-link {
+  color: #78350f;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.mobile-nav-link:hover {
+  background-color: #fef3c7;
+}
+
+.mobile-auth-btn {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* ===== HERO SECTION ===== */
 .hero-section {
   background: linear-gradient(to bottom right, #fde68a, #fef3c7);
   padding: 4rem 1rem;
@@ -192,6 +289,7 @@ body {
   align-items: center;
 }
 
+/* ===== BUTTONS ===== */
 .btn {
   font-size: 1.125rem;
   font-weight: bold;
@@ -229,6 +327,11 @@ body {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
+.btn-full {
+  max-width: 100%;
+}
+
+/* ===== VERIFIED SECTION ===== */
 .verified-section {
   background-color: white;
   border-top: 4px solid #f59e0b;
@@ -255,6 +358,7 @@ body {
   color: #78350f;
 }
 
+/* ===== PRODUCTS SECTION - Week 7 Enhanced ===== */
 .products-section {
   padding: 3rem 1rem;
 }
@@ -279,6 +383,8 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card:hover {
@@ -286,25 +392,79 @@ body {
   transform: translateY(-5px);
 }
 
+.product-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
 .product-image-real {
   width: 100%;
   height: 12rem;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s;
+}
+
+.product-card:hover .product-image-real {
+  transform: scale(1.05);
+}
+
+.product-discount-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background-color: #dc2626;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .product-info {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 .product-badge {
-  display: inline-block;
-  background-color: #d1fae5;
-  color: #065f46;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
   font-size: 0.75rem;
   padding: 0.25rem 0.5rem;
   border-radius: 9999px;
-  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.product-badge.verified {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.stars {
+  color: #eab308;
+  font-size: 0.875rem;
+}
+
+.rating-count {
+  color: #6b7280;
+  font-size: 0.75rem;
 }
 
 .product-name {
@@ -317,13 +477,26 @@ body {
 .product-location {
   font-size: 0.875rem;
   color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.product-description {
+  font-size: 0.875rem;
+  color: #9ca3af;
   margin-bottom: 0.75rem;
 }
 
-.product-footer {
+.product-pricing {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.product-price-old {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  text-decoration: line-through;
 }
 
 .product-price {
@@ -332,22 +505,178 @@ body {
   color: #b45309;
 }
 
-.btn-cart {
-  background-color: #d97706;
-  color: white;
+.product-footer {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.btn-cart,
+.btn-buy {
+  flex: 1;
   font-size: 0.875rem;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 0.625rem 1rem;
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
+  min-height: 40px;
+}
+
+.btn-cart {
+  background-color: #d97706;
+  color: white;
 }
 
 .btn-cart:hover {
   background-color: #b45309;
 }
 
+.btn-buy {
+  background-color: #059669;
+  color: white;
+}
+
+.btn-buy:hover {
+  background-color: #047857;
+}
+
+/* ===== Week 6: AUTHENTICATION MODAL ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 1rem;
+  transition: opacity 0.3s;
+}
+
+.modal-overlay.hidden {
+  display: none;
+}
+
+.modal-container {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-header {
+  background: linear-gradient(to right, #d97706, #b45309);
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.security-badge {
+  background-color: #fef3c7;
+  border: 2px solid #fcd34d;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.security-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #d97706;
+}
+
+.security-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #78350f;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #d97706;
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.1);
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon .form-input {
+  padding-right: 2.5rem;
+}
+
+.input-icon {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #059669;
+  pointer-events: none;
+}
+
+.payment-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 0;
+}
+
+.payment-badges img {
+  height: 24px;
+  border-radius: 0.25rem;
+}
+
+/* ===== FARMERS SECTION ===== */
 .farmers-section {
   background: linear-gradient(to bottom right, #d1fae5, #fde68a);
   padding: 3rem 1rem;
@@ -365,6 +694,11 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   text-align: center;
+  transition: transform 0.3s;
+}
+
+.farmer-card:hover {
+  transform: translateY(-5px);
 }
 
 .farmer-avatar {
@@ -402,6 +736,7 @@ body {
   margin-top: 0.75rem;
 }
 
+/* ===== TESTIMONIALS SECTION ===== */
 .testimonials-section {
   background-color: white;
   padding: 3rem 1rem;
@@ -418,6 +753,11 @@ body {
   padding: 1.5rem;
   border-radius: 0.75rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-3px);
 }
 
 .testimonial-rating {
@@ -436,6 +776,7 @@ body {
   color: #78350f;
 }
 
+/* ===== WHY SECTION ===== */
 .why-section {
   background: linear-gradient(to bottom right, #fde68a, #fef3c7);
   padding: 3rem 1rem;
@@ -449,6 +790,11 @@ body {
 
 .feature-item {
   text-align: center;
+  transition: transform 0.3s;
+}
+
+.feature-item:hover {
+  transform: scale(1.05);
 }
 
 .feature-icon {
@@ -467,6 +813,7 @@ body {
   color: #374151;
 }
 
+/* ===== BUSINESS MODEL SECTION ===== */
 .business-model-section {
   background-color: white;
   padding: 3rem 1rem;
@@ -563,6 +910,7 @@ body {
   color: #fcd34d;
 }
 
+/* ===== FOOTER ===== */
 .site-footer {
   background-color: #78350f;
   color: white;
@@ -638,17 +986,14 @@ body {
   color: #fde68a;
 }
 
+/* ===== RESPONSIVE - MOBILE FIRST ===== */
 @media (max-width: 768px) {
   .mobile-hide {
     display: none !important;
   }
 
-  .hamburger-menu {
+  .mobile-menu-trigger {
     display: flex;
-  }
-
-  .hamburger-label {
-    display: block;
   }
 
   .mobile-stack {
@@ -656,15 +1001,20 @@ body {
   }
 
   .hero-title {
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
 
   .hero-subtitle {
-    font-size: 1rem !important;
+    font-size: 1rem;
   }
 
   .section-title {
     font-size: 1.75rem;
+  }
+
+  .verified-badge {
+    flex-direction: column;
+    text-align: center;
   }
 
   .verified-badge h2 {
@@ -706,15 +1056,24 @@ body {
   }
 
   .revenue-grid {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
   }
 
   .value-points {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
   }
 
   .value-title {
     font-size: 1.5rem;
+  }
+
+  .product-footer {
+    flex-direction: column;
+  }
+
+  .btn-cart,
+  .btn-buy {
+    width: 100%;
   }
 }
 
@@ -727,13 +1086,21 @@ body {
   .farmers-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .testimonials-grid {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
   }
+
   .revenue-grid {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
   }
+
   .value-points {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* Utility classes */
+.hidden {
+  display: none;
 }
