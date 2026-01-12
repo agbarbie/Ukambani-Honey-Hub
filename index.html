@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ukambani Honey Hub - Pure Authentic Honey from Ukambani Region</title>
+    <title>
+      Ukambani Honey Hub - Pure Authentic Honey from Ukambani Region
+    </title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -26,9 +28,18 @@
           <!-- User Menu (shows when logged in) -->
           <div id="user-menu" class="user-menu hidden">
             <button class="user-menu-button" id="user-menu-button">
-              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              <svg
+                class="icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                />
               </svg>
               <span id="user-name-display"></span>
             </button>
@@ -39,19 +50,37 @@
               <a href="#" class="dropdown-item" id="logout-button">Logout</a>
             </div>
           </div>
-          
+
           <!-- Login button (shows when not logged in) -->
           <a href="#" class="icon-link" id="login-link" aria-label="Account">
-            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              />
             </svg>
           </a>
-          
+
           <a href="#" class="icon-link cart-icon" aria-label="Shopping Cart">
-            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+              />
             </svg>
             <span class="cart-badge">3</span>
           </a>
@@ -67,11 +96,19 @@
             <li><a href="#vendor">Become a Vendor</a></li>
             <li><a href="#about">About Ukambani</a></li>
             <li><a href="#blog">Blog</a></li>
+            <li><a href="#experience-the-journey">Experience Journey</a></li>
+            <li><a href="#how-your-order-reaches-you">How Order Reaches You</a>
+            </li>
+            <li><a href="#tracking">Tracking</a></li>
           </ul>
 
           <!-- Week 5: Mobile hamburger menu -->
           <div class="mobile-menu-trigger">
-            <button id="menu-button" class="hamburger-menu" aria-label="Open menu">
+            <button
+              id="menu-button"
+              class="hamburger-menu"
+              aria-label="Open menu"
+            >
               <span></span>
               <span></span>
               <span></span>
@@ -87,9 +124,23 @@
       <div class="mobile-menu-content" id="mobile-menu-content">
         <div class="mobile-menu-header">
           <h3>Menu</h3>
-          <button id="close-menu-button" class="close-button" aria-label="Close menu">
-            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          <button
+            id="close-menu-button"
+            class="close-button"
+            aria-label="Close menu"
+          >
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
         </div>
@@ -100,7 +151,18 @@
           <a href="#vendor" class="mobile-nav-link">Become a Vendor</a>
           <a href="#about" class="mobile-nav-link">About Ukambani</a>
           <a href="#blog" class="mobile-nav-link">Blog</a>
-          <button id="open-auth-modal-mobile" class="btn btn-primary mobile-auth-btn">
+          <a href="#experience-the-journey" class="mobile-nav-link"
+            >Experience Journey</a
+          >
+          <a href="#how-your-order-reaches-you" class="mobile-nav-link"
+            >How Order Reaches You</a
+          >
+          <a href="#tracking" class="mobile-nav-link">Tracking</a>
+          <!-- END OF NEW LINES -->
+          <button
+            id="open-auth-modal-mobile"
+            class="btn btn-primary mobile-auth-btn"
+          >
             Sign Up / Login
           </button>
         </nav>
@@ -111,17 +173,25 @@
     <section class="hero-section" id="home">
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <h1 class="hero-title">Pure Authentic Honey from the Heart of Ukambani</h1>
+        <h1 class="hero-title">
+          Pure Authentic Honey from the Heart of Ukambani
+        </h1>
         <p class="hero-subtitle">
-          Connecting Ukambani honey farmers directly to your table. 100% natural, 
-          ethically sourced, supporting local communities.
+          Connecting Ukambani honey farmers directly to your table. 100%
+          natural, ethically sourced, supporting local communities.
         </p>
 
         <div class="cta-buttons">
-          <button class="btn btn-primary" onclick="document.getElementById('products').scrollIntoView({ behavior: 'smooth' })">
+          <button
+            class="btn btn-primary"
+            onclick="document.getElementById('products').scrollIntoView({ behavior: 'smooth' })"
+          >
             Shop Honey Now
           </button>
-          <button class="btn btn-secondary" onclick="document.getElementById('vendor').scrollIntoView({ behavior: 'smooth' })">
+          <button
+            class="btn btn-secondary"
+            onclick="document.getElementById('vendor').scrollIntoView({ behavior: 'smooth' })"
+          >
             Join as Farmer
           </button>
         </div>
@@ -132,9 +202,11 @@
       <div class="container">
         <div class="verified-badge">
           <svg class="verified-icon" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd"
+            <path
+              fill-rule="evenodd"
               d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clip-rule="evenodd" />
+              clip-rule="evenodd"
+            />
           </svg>
           <h2>Verified Ukambani Honey - Traceable to the Source</h2>
         </div>
@@ -167,13 +239,17 @@
               </div>
               <h3 class="product-name">Pure Raw Honey - 1kg</h3>
               <p class="product-location">📍 From Machakos County</p>
-              <p class="product-description">100% natural, unprocessed honey with rich flavor</p>
+              <p class="product-description">
+                100% natural, unprocessed honey with rich flavor
+              </p>
               <div class="product-pricing">
                 <span class="product-price-old">KES 1,000</span>
                 <span class="product-price">KES 800</span>
               </div>
               <div class="product-footer">
-                <button class="btn btn-cart add-to-cart-btn">Add to Cart</button>
+                <button class="btn btn-cart add-to-cart-btn">
+                  Add to Cart
+                </button>
                 <button class="btn btn-buy buy-now-btn">Buy Now</button>
               </div>
             </div>
@@ -205,7 +281,9 @@
                 <span class="product-price">KES 1,200</span>
               </div>
               <div class="product-footer">
-                <button class="btn btn-cart add-to-cart-btn">Add to Cart</button>
+                <button class="btn btn-cart add-to-cart-btn">
+                  Add to Cart
+                </button>
                 <button class="btn btn-buy buy-now-btn">Buy Now</button>
               </div>
             </div>
@@ -231,12 +309,16 @@
               </div>
               <h3 class="product-name">Ginger Honey - 750g</h3>
               <p class="product-location">📍 From Makueni County</p>
-              <p class="product-description">Infused with natural ginger extracts</p>
+              <p class="product-description">
+                Infused with natural ginger extracts
+              </p>
               <div class="product-pricing">
                 <span class="product-price">KES 950</span>
               </div>
               <div class="product-footer">
-                <button class="btn btn-cart add-to-cart-btn">Add to Cart</button>
+                <button class="btn btn-cart add-to-cart-btn">
+                  Add to Cart
+                </button>
                 <button class="btn btn-buy buy-now-btn">Buy Now</button>
               </div>
             </div>
@@ -261,12 +343,16 @@
               </div>
               <h3 class="product-name">Bee Pollen - 250g</h3>
               <p class="product-location">📍 From Machakos County</p>
-              <p class="product-description">Rich in nutrients and antioxidants</p>
+              <p class="product-description">
+                Rich in nutrients and antioxidants
+              </p>
               <div class="product-pricing">
                 <span class="product-price">KES 600</span>
               </div>
               <div class="product-footer">
-                <button class="btn btn-cart add-to-cart-btn">Add to Cart</button>
+                <button class="btn btn-cart add-to-cart-btn">
+                  Add to Cart
+                </button>
                 <button class="btn btn-buy buy-now-btn">Buy Now</button>
               </div>
             </div>
@@ -278,19 +364,26 @@
     <section class="farmers-section" id="farmers">
       <div class="container">
         <h2 class="section-title">Our Trusted Farmers</h2>
-        <p class="section-subtitle">Meet the dedicated beekeepers who make our honey possible</p>
+        <p class="section-subtitle">
+          Meet the dedicated beekeepers who make our honey possible
+        </p>
 
         <div class="farmers-grid mobile-stack">
           <article class="farmer-card">
             <div class="farmer-image-container">
-              <img src="https://images.unsplash.com/photo-1566616213894-2d4e1baee5d8?w=300&h=300&fit=crop" 
-                   alt="John Mutua - Beekeeper" 
-                   class="farmer-image" />
+              <img
+                src="https://images.unsplash.com/photo-1566616213894-2d4e1baee5d8?w=300&h=300&fit=crop"
+                alt="John Mutua - Beekeeper"
+                class="farmer-image"
+              />
             </div>
             <h3 class="farmer-name">John Mutua</h3>
             <p class="farmer-location">📍 Machakos County</p>
             <p class="farmer-experience">15 years of beekeeping experience</p>
-            <p class="farmer-bio">"Beekeeping has transformed my family's livelihood. I'm proud to share our pure honey with Kenya."</p>
+            <p class="farmer-bio">
+              "Beekeeping has transformed my family's livelihood. I'm proud to
+              share our pure honey with Kenya."
+            </p>
             <div class="farmer-rating">★★★★★</div>
             <div class="farmer-stats">
               <span class="stat-item">🐝 50+ Hives</span>
@@ -300,14 +393,19 @@
 
           <article class="farmer-card">
             <div class="farmer-image-container">
-              <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=300&h=300&fit=crop" 
-                   alt="Mary Nduku - Beekeeper" 
-                   class="farmer-image" />
+              <img
+                src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=300&h=300&fit=crop"
+                alt="Mary Nduku - Beekeeper"
+                class="farmer-image"
+              />
             </div>
             <h3 class="farmer-name">Mary Nduku</h3>
             <p class="farmer-location">📍 Kitui County</p>
             <p class="farmer-experience">10 years of beekeeping experience</p>
-            <p class="farmer-bio">"I started with 5 hives and now support 3 families. Our honey is 100% organic and natural."</p>
+            <p class="farmer-bio">
+              "I started with 5 hives and now support 3 families. Our honey is
+              100% organic and natural."
+            </p>
             <div class="farmer-rating">★★★★★</div>
             <div class="farmer-stats">
               <span class="stat-item">🐝 35+ Hives</span>
@@ -317,14 +415,19 @@
 
           <article class="farmer-card">
             <div class="farmer-image-container">
-              <img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?w=300&h=300&fit=crop" 
-                   alt="Peter Kioko - Beekeeper" 
-                   class="farmer-image" />
+              <img
+                src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?w=300&h=300&fit=crop"
+                alt="Peter Kioko - Beekeeper"
+                class="farmer-image"
+              />
             </div>
             <h3 class="farmer-name">Peter Kioko</h3>
             <p class="farmer-location">📍 Makueni County</p>
             <p class="farmer-experience">12 years of beekeeping experience</p>
-            <p class="farmer-bio">"Traditional beekeeping methods combined with modern techniques produce the finest honey quality."</p>
+            <p class="farmer-bio">
+              "Traditional beekeeping methods combined with modern techniques
+              produce the finest honey quality."
+            </p>
             <div class="farmer-rating">★★★★★</div>
             <div class="farmer-stats">
               <span class="stat-item">🐝 40+ Hives</span>
@@ -343,7 +446,8 @@
           <article class="testimonial-card">
             <div class="testimonial-rating">★★★★★</div>
             <p class="testimonial-text">
-              "The best honey I've ever tasted! Pure and natural. I love that I can trace it back to the farmer."
+              "The best honey I've ever tasted! Pure and natural. I love that I
+              can trace it back to the farmer."
             </p>
             <p class="testimonial-author">- Sarah K., Nairobi</p>
           </article>
@@ -351,7 +455,8 @@
           <article class="testimonial-card">
             <div class="testimonial-rating">★★★★★</div>
             <p class="testimonial-text">
-              "Supporting local farmers while getting quality products. The delivery was fast and packaging excellent!"
+              "Supporting local farmers while getting quality products. The
+              delivery was fast and packaging excellent!"
             </p>
             <p class="testimonial-author">- David M., Mombasa</p>
           </article>
@@ -367,19 +472,25 @@
           <div class="feature-item">
             <div class="feature-icon">🌿</div>
             <h3 class="feature-title">100% Natural</h3>
-            <p class="feature-text">No additives, no processing - just pure honey from the hive</p>
+            <p class="feature-text">
+              No additives, no processing - just pure honey from the hive
+            </p>
           </div>
 
           <div class="feature-item">
             <div class="feature-icon">🤝</div>
             <h3 class="feature-title">Support Local</h3>
-            <p class="feature-text">Every purchase directly supports Ukambani farming families</p>
+            <p class="feature-text">
+              Every purchase directly supports Ukambani farming families
+            </p>
           </div>
 
           <div class="feature-item">
             <div class="feature-icon">📍</div>
             <h3 class="feature-title">Traceable</h3>
-            <p class="feature-text">QR code on every jar links to your farmer's story</p>
+            <p class="feature-text">
+              QR code on every jar links to your farmer's story
+            </p>
           </div>
         </div>
       </div>
@@ -389,22 +500,28 @@
     <section class="about-section" id="about">
       <div class="container">
         <h2 class="section-title">About Ukambani Region</h2>
-        <p class="section-subtitle">Discover the land where our honey comes from</p>
+        <p class="section-subtitle">
+          Discover the land where our honey comes from
+        </p>
 
         <div class="about-content">
           <div class="about-text">
             <h3 class="about-heading">The Heart of Kenyan Beekeeping</h3>
             <p class="about-paragraph">
-              Ukambani, comprising Machakos, Kitui, and Makueni counties, is renowned for its rich beekeeping 
-              tradition spanning centuries. The region's unique semi-arid climate, diverse flora, and deep-rooted 
-              cultural practices create the perfect environment for producing some of Kenya's finest honey.
+              Ukambani, comprising Machakos, Kitui, and Makueni counties, is
+              renowned for its rich beekeeping tradition spanning centuries. The
+              region's unique semi-arid climate, diverse flora, and deep-rooted
+              cultural practices create the perfect environment for producing
+              some of Kenya's finest honey.
             </p>
             <p class="about-paragraph">
-              The Kamba people have practiced beekeeping for generations, passing down traditional knowledge 
-              while embracing modern sustainable techniques. This blend of heritage and innovation ensures 
-              every jar of Ukambani honey carries the essence of authentic craftsmanship.
+              The Kamba people have practiced beekeeping for generations,
+              passing down traditional knowledge while embracing modern
+              sustainable techniques. This blend of heritage and innovation
+              ensures every jar of Ukambani honey carries the essence of
+              authentic craftsmanship.
             </p>
-            
+
             <div class="about-highlights">
               <div class="highlight-item">
                 <div class="highlight-icon">🏞️</div>
@@ -413,7 +530,7 @@
                   <p>Semi-arid conditions perfect for bee colonies</p>
                 </div>
               </div>
-              
+
               <div class="highlight-item">
                 <div class="highlight-icon">🌺</div>
                 <div class="highlight-content">
@@ -421,7 +538,7 @@
                   <p>Indigenous plants provide unique honey flavors</p>
                 </div>
               </div>
-              
+
               <div class="highlight-item">
                 <div class="highlight-icon">👥</div>
                 <div class="highlight-content">
@@ -429,7 +546,7 @@
                   <p>Over 500 families depend on beekeeping</p>
                 </div>
               </div>
-              
+
               <div class="highlight-item">
                 <div class="highlight-icon">🎯</div>
                 <div class="highlight-content">
@@ -443,27 +560,38 @@
           <div class="about-map">
             <h3 class="map-title">Honey Production Areas in Ukambani</h3>
             <div class="map-container">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1016367.1724076655!2d37.24842967968749!3d-1.5195979999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f7d6f6e9e4c51%3A0x9e358f7b32e3b1e4!2sMachakos%20County!5e0!3m2!1sen!2ske!4v1234567890123!5m2!1sen!2ske" 
-                width="100%" 
-                height="400" 
-                style="border:0; border-radius: 0.75rem;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1016367.1724076655!2d37.24842967968749!3d-1.5195979999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f7d6f6e9e4c51%3A0x9e358f7b32e3b1e4!2sMachakos%20County!5e0!3m2!1sen!2ske!4v1234567890123!5m2!1sen!2ske"
+                width="100%"
+                height="400"
+                style="border: 0; border-radius: 0.75rem"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
               </iframe>
             </div>
-            
+
             <div class="map-legend">
               <h4>Key Honey Producing Areas:</h4>
               <ul class="legend-list">
-                <li><span class="legend-marker machakos">●</span> Machakos County - Central Ukambani</li>
-                <li><span class="legend-marker kitui">●</span> Kitui County - Eastern Ukambani</li>
-                <li><span class="legend-marker makueni">●</span> Makueni County - Southern Ukambani</li>
+                <li>
+                  <span class="legend-marker machakos">●</span> Machakos County
+                  - Central Ukambani
+                </li>
+                <li>
+                  <span class="legend-marker kitui">●</span> Kitui County -
+                  Eastern Ukambani
+                </li>
+                <li>
+                  <span class="legend-marker makueni">●</span> Makueni County -
+                  Southern Ukambani
+                </li>
               </ul>
               <p class="map-note">
-                <strong>Did you know?</strong> Ukambani produces over 2,000 tons of honey annually, 
-                making it one of Kenya's top honey-producing regions.
+                <strong>Did you know?</strong> Ukambani produces over 2,000 tons
+                of honey annually, making it one of Kenya's top honey-producing
+                regions.
               </p>
             </div>
           </div>
@@ -494,13 +622,17 @@
     <section class="blog-section" id="blog">
       <div class="container">
         <h2 class="section-title">Latest from Our Blog</h2>
-        <p class="section-subtitle">Stories, tips, and updates from the world of Ukambani honey</p>
+        <p class="section-subtitle">
+          Stories, tips, and updates from the world of Ukambani honey
+        </p>
 
         <div class="blog-grid mobile-stack">
           <article class="blog-card">
             <div class="blog-image">
-              <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=600&h=400&fit=crop" 
-                   alt="Beekeeping techniques" />
+              <img
+                src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=600&h=400&fit=crop"
+                alt="Beekeeping techniques"
+              />
               <span class="blog-category">Beekeeping Tips</span>
             </div>
             <div class="blog-content">
@@ -508,10 +640,13 @@
                 <span class="blog-date">📅 December 10, 2024</span>
                 <span class="blog-reading-time">⏱️ 5 min read</span>
               </div>
-              <h3 class="blog-title">5 Traditional Beekeeping Techniques Still Used in Ukambani</h3>
+              <h3 class="blog-title">
+                5 Traditional Beekeeping Techniques Still Used in Ukambani
+              </h3>
               <p class="blog-excerpt">
-                Discover how ancient wisdom meets modern practices in Ukambani's thriving beekeeping 
-                community. Learn about the time-tested methods that produce exceptional honey.
+                Discover how ancient wisdom meets modern practices in Ukambani's
+                thriving beekeeping community. Learn about the time-tested
+                methods that produce exceptional honey.
               </p>
               <a href="#" class="blog-link">Read More →</a>
             </div>
@@ -519,8 +654,10 @@
 
           <article class="blog-card">
             <div class="blog-image">
-              <img src="https://advaitliving.com/cdn/shop/articles/1_Health_Benefits_of_Raw_Honey.png?v=1765197562&width=1100" 
-                   alt="Honey benefits" />
+              <img
+                src="https://advaitliving.com/cdn/shop/articles/1_Health_Benefits_of_Raw_Honey.png?v=1765197562&width=1100"
+                alt="Honey benefits"
+              />
               <span class="blog-category">Health & Wellness</span>
             </div>
             <div class="blog-content">
@@ -528,10 +665,13 @@
                 <span class="blog-date">📅 December 8, 2024</span>
                 <span class="blog-reading-time">⏱️ 4 min read</span>
               </div>
-              <h3 class="blog-title">The Amazing Health Benefits of Raw Ukambani Honey</h3>
+              <h3 class="blog-title">
+                The Amazing Health Benefits of Raw Ukambani Honey
+              </h3>
               <p class="blog-excerpt">
-                From boosting immunity to soothing sore throats, discover why raw honey from Ukambani 
-                is nature's ultimate superfood and how to incorporate it into your daily routine.
+                From boosting immunity to soothing sore throats, discover why
+                raw honey from Ukambani is nature's ultimate superfood and how
+                to incorporate it into your daily routine.
               </p>
               <a href="#" class="blog-link">Read More →</a>
             </div>
@@ -539,8 +679,10 @@
 
           <article class="blog-card">
             <div class="blog-image">
-              <img src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?w=600&h=400&fit=crop" 
-                   alt="Sustainable farming" />
+              <img
+                src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?w=600&h=400&fit=crop"
+                alt="Sustainable farming"
+              />
               <span class="blog-category">Sustainability</span>
             </div>
             <div class="blog-content">
@@ -548,10 +690,13 @@
                 <span class="blog-date">📅 December 5, 2024</span>
                 <span class="blog-reading-time">⏱️ 6 min read</span>
               </div>
-              <h3 class="blog-title">How Ukambani Beekeeping Supports Environmental Conservation</h3>
+              <h3 class="blog-title">
+                How Ukambani Beekeeping Supports Environmental Conservation
+              </h3>
               <p class="blog-excerpt">
-                Explore the crucial role beekeepers play in preserving Ukambani's ecosystem. 
-                Learn how buying local honey helps protect endangered plant species and biodiversity.
+                Explore the crucial role beekeepers play in preserving
+                Ukambani's ecosystem. Learn how buying local honey helps protect
+                endangered plant species and biodiversity.
               </p>
               <a href="#" class="blog-link">Read More →</a>
             </div>
@@ -559,8 +704,10 @@
 
           <article class="blog-card">
             <div class="blog-image">
-              <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=400&fit=crop" 
-                   alt="Honey recipes" />
+              <img
+                src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&h=400&fit=crop"
+                alt="Honey recipes"
+              />
               <span class="blog-category">Recipes</span>
             </div>
             <div class="blog-content">
@@ -568,10 +715,13 @@
                 <span class="blog-date">📅 December 3, 2024</span>
                 <span class="blog-reading-time">⏱️ 3 min read</span>
               </div>
-              <h3 class="blog-title">10 Delicious Kenyan Recipes Using Ukambani Honey</h3>
+              <h3 class="blog-title">
+                10 Delicious Kenyan Recipes Using Ukambani Honey
+              </h3>
               <p class="blog-excerpt">
-                From traditional mutura glazed with honey to modern honey-lemon dressings, discover 
-                creative ways to use Ukambani honey in your favorite Kenyan dishes.
+                From traditional mutura glazed with honey to modern honey-lemon
+                dressings, discover creative ways to use Ukambani honey in your
+                favorite Kenyan dishes.
               </p>
               <a href="#" class="blog-link">Read More →</a>
             </div>
@@ -582,7 +732,12 @@
           <h3>Want more beekeeping insights and honey tips?</h3>
           <p>Subscribe to our newsletter for weekly updates</p>
           <form class="newsletter-form">
-            <input type="email" placeholder="Enter your email" class="newsletter-input" required />
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="newsletter-input"
+              required
+            />
             <button type="submit" class="btn btn-primary">Subscribe</button>
           </form>
         </div>
@@ -595,9 +750,10 @@
 
         <div class="business-intro">
           <p class="business-description">
-            Ukambani Honey Hub operates as a marketplace platform connecting verified honey farmers
-            directly with customers across Kenya and beyond. We ensure quality, authenticity, and fair
-            compensation for our farming community.
+            Ukambani Honey Hub operates as a marketplace platform connecting
+            verified honey farmers directly with customers across Kenya and
+            beyond. We ensure quality, authenticity, and fair compensation for
+            our farming community.
           </p>
         </div>
 
@@ -606,9 +762,9 @@
             <div class="revenue-icon">💰</div>
             <h3 class="revenue-title">Commission on Sales</h3>
             <p class="revenue-text">
-              We charge a 15% commission on each honey product sold through our platform.
-              This covers payment processing, marketing, and platform maintenance while ensuring
-              farmers receive 85% of the sale price.
+              We charge a 15% commission on each honey product sold through our
+              platform. This covers payment processing, marketing, and platform
+              maintenance while ensuring farmers receive 85% of the sale price.
             </p>
           </article>
 
@@ -617,8 +773,10 @@
             <h3 class="revenue-title">Vendor Subscription Plans</h3>
             <p class="revenue-text">
               <strong>Basic Plan (Free):</strong> Up to 10 product listings<br />
-              <strong>Premium Plan (KES 2,000/month):</strong> Unlimited listings, featured placement<br />
-              <strong>Enterprise Plan (KES 5,000/month):</strong> All Premium features plus dedicated support
+              <strong>Premium Plan (KES 2,000/month):</strong> Unlimited
+              listings, featured placement<br />
+              <strong>Enterprise Plan (KES 5,000/month):</strong> All Premium
+              features plus dedicated support
             </p>
           </article>
 
@@ -626,9 +784,9 @@
             <div class="revenue-icon">📦</div>
             <h3 class="revenue-title">Logistics & Delivery Fees</h3>
             <p class="revenue-text">
-              Standard delivery fee of KES 200-500 depending on location (Nairobi: KES 200,
-              Other cities: KES 350, Remote areas: KES 500). We partner with reliable courier
-              services to ensure safe delivery.
+              Standard delivery fee of KES 200-500 depending on location
+              (Nairobi: KES 200, Other cities: KES 350, Remote areas: KES 500).
+              We partner with reliable courier services to ensure safe delivery.
             </p>
           </article>
 
@@ -636,8 +794,9 @@
             <div class="revenue-icon">🎯</div>
             <h3 class="revenue-title">Featured Listings</h3>
             <p class="revenue-text">
-              Farmers can promote their products through featured listings at KES 500 per product per week.
-              Featured products appear at the top of search results and on the homepage.
+              Farmers can promote their products through featured listings at
+              KES 500 per product per week. Featured products appear at the top
+              of search results and on the homepage.
             </p>
           </article>
 
@@ -645,8 +804,9 @@
             <div class="revenue-icon">📢</div>
             <h3 class="revenue-title">Brand Partnerships</h3>
             <p class="revenue-text">
-              We collaborate with hotels, restaurants, and organic food stores for bulk orders.
-              Partnership deals include volume discounts and custom packaging options.
+              We collaborate with hotels, restaurants, and organic food stores
+              for bulk orders. Partnership deals include volume discounts and
+              custom packaging options.
             </p>
           </article>
 
@@ -654,8 +814,9 @@
             <div class="revenue-icon">🎓</div>
             <h3 class="revenue-title">Training & Consultation</h3>
             <p class="revenue-text">
-              Beekeeping training workshops (KES 5,000 per farmer) and consultation services
-              (KES 10,000 per session) to help improve production quality.
+              Beekeeping training workshops (KES 5,000 per farmer) and
+              consultation services (KES 10,000 per session) to help improve
+              production quality.
             </p>
           </article>
         </div>
@@ -664,16 +825,19 @@
           <h3 class="value-title">Our Value Proposition</h3>
           <div class="value-points mobile-stack">
             <div class="value-point">
-              <strong>For Farmers:</strong> Access to wider markets, fair pricing, training resources,
-              and direct customer relationships without middlemen exploitation
+              <strong>For Farmers:</strong> Access to wider markets, fair
+              pricing, training resources, and direct customer relationships
+              without middlemen exploitation
             </div>
             <div class="value-point">
-              <strong>For Customers:</strong> Guaranteed authentic honey, traceability to source,
-              supporting local communities, and competitive pricing
+              <strong>For Customers:</strong> Guaranteed authentic honey,
+              traceability to source, supporting local communities, and
+              competitive pricing
             </div>
             <div class="value-point">
-              <strong>For Community:</strong> Economic empowerment of Ukambani region, preservation of
-              traditional beekeeping, and environmental conservation
+              <strong>For Community:</strong> Economic empowerment of Ukambani
+              region, preservation of traditional beekeeping, and environmental
+              conservation
             </div>
           </div>
         </div>
@@ -685,9 +849,23 @@
       <div class="modal-container">
         <div class="modal-header">
           <h3 class="modal-title">Welcome to Ukambani Honey Hub</h3>
-          <button id="close-auth-modal" class="close-button" aria-label="Close modal">
-            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          <button
+            id="close-auth-modal"
+            class="close-button"
+            aria-label="Close modal"
+          >
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
         </div>
@@ -695,11 +873,22 @@
         <div class="modal-body">
           <!-- Week 6: Security Badge -->
           <div class="security-badge">
-            <svg class="security-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            <svg
+              class="security-icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+              />
             </svg>
-            <span class="security-text">Secured by SSL: 256-bit Encryption</span>
+            <span class="security-text"
+              >Secured by SSL: 256-bit Encryption</span
+            >
           </div>
 
           <!-- Tab Navigation -->
@@ -731,9 +920,18 @@
                   placeholder="Enter your password"
                   required
                 />
-                <svg class="input-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                <svg
+                  class="input-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  />
                 </svg>
               </div>
             </div>
@@ -746,10 +944,13 @@
               <a href="#" class="forgot-password">Forgot password?</a>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-full">Login</button>
+            <button type="submit" class="btn btn-primary btn-full">
+              Login
+            </button>
 
             <p class="form-footer-text">
-              Don't have an account? <a href="#" class="switch-tab-link" data-tab="signup">Sign up</a>
+              Don't have an account?
+              <a href="#" class="switch-tab-link" data-tab="signup">Sign up</a>
             </p>
           </form>
 
@@ -799,16 +1000,27 @@
                   minlength="8"
                   required
                 />
-                <svg class="input-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                <svg
+                  class="input-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  />
                 </svg>
               </div>
               <div class="password-strength" id="password-strength"></div>
             </div>
 
             <div class="form-group">
-              <label for="signup-confirm-password" class="form-label">Confirm Password</label>
+              <label for="signup-confirm-password" class="form-label"
+                >Confirm Password</label
+              >
               <div class="input-with-icon">
                 <input
                   type="password"
@@ -817,9 +1029,18 @@
                   placeholder="Re-enter password"
                   required
                 />
-                <svg class="input-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                <svg
+                  class="input-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  />
                 </svg>
               </div>
             </div>
@@ -827,22 +1048,37 @@
             <div class="form-group">
               <label class="checkbox-label">
                 <input type="checkbox" id="terms" required />
-                <span>I agree to the <a href="#" class="link-text">Terms & Conditions</a></span>
+                <span
+                  >I agree to the
+                  <a href="#" class="link-text">Terms & Conditions</a></span
+                >
               </label>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+            <button type="submit" class="btn btn-primary btn-full">
+              Create Account
+            </button>
 
             <p class="form-footer-text">
-              Already have an account? <a href="#" class="switch-tab-link" data-tab="login">Login</a>
+              Already have an account?
+              <a href="#" class="switch-tab-link" data-tab="login">Login</a>
             </p>
           </form>
 
           <!-- Week 6: Payment Trust Indicators -->
           <div class="payment-badges">
-            <img src="https://placehold.co/60x20/007bff/white?text=Visa" alt="Visa accepted" />
-            <img src="https://placehold.co/60x20/22c55e/white?text=M-Pesa" alt="M-Pesa accepted" />
-            <img src="https://placehold.co/80x20/d97706/white?text=Secure" alt="Security seal" />
+            <img
+              src="https://placehold.co/60x20/007bff/white?text=Visa"
+              alt="Visa accepted"
+            />
+            <img
+              src="https://placehold.co/60x20/22c55e/white?text=M-Pesa"
+              alt="M-Pesa accepted"
+            />
+            <img
+              src="https://placehold.co/80x20/d97706/white?text=Secure"
+              alt="Security seal"
+            />
           </div>
         </div>
       </div>
@@ -853,21 +1089,38 @@
       <div class="modal-container modal-large">
         <div class="modal-header">
           <h3 class="modal-title">🛒 Shopping Cart</h3>
-          <button id="close-cart-modal" class="close-button" aria-label="Close modal">
-            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          <button
+            id="close-cart-modal"
+            class="close-button"
+            aria-label="Close modal"
+          >
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
         </div>
 
         <div class="modal-body">
           <div id="cart-items-container"></div>
-          
+
           <div id="cart-empty" class="cart-empty hidden">
             <div class="empty-cart-icon">🛒</div>
             <h3>Your cart is empty</h3>
             <p>Add some delicious Ukambani honey to get started!</p>
-            <button class="btn btn-primary" onclick="document.getElementById('cart-modal').classList.add('hidden'); document.getElementById('products').scrollIntoView({ behavior: 'smooth' })">
+            <button
+              class="btn btn-primary"
+              onclick="document.getElementById('cart-modal').classList.add('hidden'); document.getElementById('products').scrollIntoView({ behavior: 'smooth' })"
+            >
               Browse Products
             </button>
           </div>
@@ -885,10 +1138,14 @@
               <span>Total:</span>
               <span id="cart-total">KES 0</span>
             </div>
-            
+
             <div class="cart-actions">
-              <button class="btn btn-secondary" id="continue-shopping-btn">Continue Shopping</button>
-              <button class="btn btn-primary" id="proceed-checkout-btn">Proceed to Checkout</button>
+              <button class="btn btn-secondary" id="continue-shopping-btn">
+                Continue Shopping
+              </button>
+              <button class="btn btn-primary" id="proceed-checkout-btn">
+                Proceed to Checkout
+              </button>
             </div>
           </div>
         </div>
@@ -900,48 +1157,95 @@
       <div class="modal-container modal-large">
         <div class="modal-header">
           <h3 class="modal-title">🔒 Secure Checkout</h3>
-          <button id="close-checkout-modal" class="close-button" aria-label="Close modal">
-            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          <button
+            id="close-checkout-modal"
+            class="close-button"
+            aria-label="Close modal"
+          >
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
         </div>
 
         <div class="modal-body">
           <div class="security-badge">
-            <svg class="security-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            <svg
+              class="security-icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+              />
             </svg>
             <span class="security-text">Secured Payment - SSL Encrypted</span>
           </div>
 
           <form id="checkout-form" class="checkout-form">
             <h4 class="section-heading">Delivery Information</h4>
-            
+
             <div class="form-row">
               <div class="form-group">
                 <label for="delivery-name" class="form-label">Full Name</label>
-                <input type="text" id="delivery-name" class="form-input" required />
+                <input
+                  type="text"
+                  id="delivery-name"
+                  class="form-input"
+                  required
+                />
               </div>
-              
+
               <div class="form-group">
-                <label for="delivery-phone" class="form-label">Phone Number</label>
-                <input type="tel" id="delivery-phone" class="form-input" required />
+                <label for="delivery-phone" class="form-label"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="delivery-phone"
+                  class="form-input"
+                  required
+                />
               </div>
             </div>
 
             <div class="form-group">
-              <label for="delivery-address" class="form-label">Delivery Address</label>
-              <textarea id="delivery-address" class="form-input" rows="3" required></textarea>
+              <label for="delivery-address" class="form-label"
+                >Delivery Address</label
+              >
+              <textarea
+                id="delivery-address"
+                class="form-input"
+                rows="3"
+                required
+              ></textarea>
             </div>
 
             <div class="form-row">
               <div class="form-group">
                 <label for="delivery-city" class="form-label">City</label>
-                <input type="text" id="delivery-city" class="form-input" required />
+                <input
+                  type="text"
+                  id="delivery-city"
+                  class="form-input"
+                  required
+                />
               </div>
-              
+
               <div class="form-group">
                 <label for="delivery-county" class="form-label">County</label>
                 <select id="delivery-county" class="form-input" required>
@@ -956,7 +1260,7 @@
             </div>
 
             <h4 class="section-heading">Payment Method</h4>
-            
+
             <div class="payment-methods">
               <label class="payment-option">
                 <input type="radio" name="payment" value="mpesa" checked />
@@ -965,7 +1269,7 @@
                   <span class="payment-name">M-Pesa</span>
                 </div>
               </label>
-              
+
               <label class="payment-option">
                 <input type="radio" name="payment" value="card" />
                 <div class="payment-card">
@@ -973,7 +1277,7 @@
                   <span class="payment-name">Card Payment</span>
                 </div>
               </label>
-              
+
               <label class="payment-option">
                 <input type="radio" name="payment" value="cod" />
                 <div class="payment-card">
@@ -1000,11 +1304,360 @@
               </div>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-full">Complete Order</button>
+            <button type="submit" class="btn btn-primary btn-full">
+              Complete Order
+            </button>
           </form>
         </div>
       </div>
     </div>
+
+    <!-- ============================================ -->
+    <!-- NEW SECTIONS TO ADD TO YOUR EXISTING HTML -->
+    <!-- ============================================ -->
+
+    <!-- INSERT THIS AFTER THE "verified-section" -->
+    <!-- BEFORE YOUR EXISTING "products-section" -->
+
+    <!-- NEW: Enhanced Product Spotlight Section with Rich Media -->
+    <section class="product-spotlight-section" id="experience-the-journey">
+      <div class="container">
+        <h2 class="section-title">🎥 Experience the Journey</h2>
+        <p class="section-subtitle">
+          From hive to home - see how our honey is harvested and delivered
+        </p>
+
+        <div class="spotlight-grid">
+          <!-- Video Showcase -->
+          <div class="video-showcase">
+            <div class="video-container">
+              <img
+                src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&h=600&fit=crop"
+                alt="Beekeeping in Ukambani"
+                class="video-thumbnail"
+              />
+              <div class="video-overlay">
+                <button class="play-button" onclick="playVideo()">
+                  <svg
+                    class="play-icon"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </button>
+                <p class="video-caption">
+                  Watch: From Ukambani Farms to Your Table
+                </p>
+              </div>
+            </div>
+
+            <div class="customer-testimonial-box">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                "The honey arrived still warm from the afternoon sun. You can
+                taste the difference that comes from buying directly from the
+                farmers. Amazing quality!"
+              </p>
+              <p class="testimonial-author">- Grace W., Nairobi</p>
+              <span class="ugc-badge">Verified Customer Review</span>
+            </div>
+          </div>
+
+          <!-- Featured Product Detail -->
+          <div class="featured-product-detail">
+            <span class="featured-badge">✨ Featured This Week</span>
+            <h3 class="featured-title">The Heritage Collection - 1kg</h3>
+
+            <div class="product-story">
+              <p class="story-intro">
+                <strong>A taste of tradition:</strong> This premium honey comes
+                from John Mutua's 50+ hives in the highlands of Machakos County.
+              </p>
+
+              <div class="story-highlights">
+                <div class="story-point">
+                  <span class="point-icon">🌸</span>
+                  <div>
+                    <strong>Wild Flower Harvest</strong>
+                    <p>
+                      Collected from indigenous flora during peak bloom season
+                    </p>
+                  </div>
+                </div>
+
+                <div class="story-point">
+                  <span class="point-icon">🏔️</span>
+                  <div>
+                    <strong>Altitude Advantage</strong>
+                    <p>
+                      Harvested at 1,500m elevation for unique flavor profile
+                    </p>
+                  </div>
+                </div>
+
+                <div class="story-point">
+                  <span class="point-icon">🤝</span>
+                  <div>
+                    <strong>Fair Trade Direct</strong>
+                    <p>85% of your payment goes directly to the farmer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-certifications">
+              <span class="cert-badge">✓ Organic Certified</span>
+              <span class="cert-badge">✓ Lab Tested</span>
+              <span class="cert-badge">✓ Chemical Free</span>
+            </div>
+
+            <div class="featured-pricing">
+              <div class="price-info">
+                <span class="featured-price">KES 1,800</span>
+                <span class="price-note">Includes cold-chain delivery</span>
+              </div>
+              <button class="btn btn-primary featured-cta add-heritage-btn">
+                Order Heritage Collection
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSERT THIS AFTER YOUR EXISTING "products-section" -->
+
+    <!-- NEW: Order Flow / Fulfillment Diagram Section -->
+    <section class="order-flow-section" id="how-your-order-reaches-you">
+      <div class="container">
+        <h2 class="section-title">📦 How Your Order Reaches You</h2>
+        <p class="section-subtitle">Transparency from hive to doorstep</p>
+
+        <div class="flow-diagram">
+          <div class="flow-step">
+            <div class="step-icon step-icon-blue">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                />
+              </svg>
+            </div>
+            <h4 class="step-title">1. You Order</h4>
+            <p class="step-description">
+              Secure checkout with M-Pesa or card payment
+            </p>
+          </div>
+
+          <div class="flow-arrow">→</div>
+
+          <div class="flow-step">
+            <div class="step-icon step-icon-yellow">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                />
+              </svg>
+            </div>
+            <h4 class="step-title">2. Harvest & Pack</h4>
+            <p class="step-description">Farmers prepare your order with care</p>
+          </div>
+
+          <div class="flow-arrow">→</div>
+
+          <div class="flow-step">
+            <div class="step-icon step-icon-purple">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"
+                />
+              </svg>
+            </div>
+            <h4 class="step-title">3. Cold-Chain Transit</h4>
+            <p class="step-description">Temperature-controlled delivery van</p>
+          </div>
+
+          <div class="flow-arrow">→</div>
+
+          <div class="flow-step">
+            <div class="step-icon step-icon-green">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                />
+              </svg>
+            </div>
+            <h4 class="step-title">4. Delivered</h4>
+            <p class="step-description">Fresh honey at your doorstep</p>
+          </div>
+        </div>
+
+        <div class="flow-cta">
+          <button
+            class="btn btn-primary"
+            onclick="document.getElementById('tracking').scrollIntoView({ behavior: 'smooth' })"
+          >
+            Track a Sample Order
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSERT THIS AFTER THE ORDER FLOW SECTION -->
+
+    <!-- NEW: Live Order Tracking Demo -->
+    <section class="tracking-demo-section" id="tracking">
+      <div class="container">
+        <h2 class="section-title">🚚 Live Order Tracking</h2>
+        <p class="section-subtitle">Real-time updates on your delivery</p>
+
+        <div class="tracking-container">
+          <div class="tracking-header">
+            <h3 class="tracking-order-id">Order #UKH-2024-00392</h3>
+            <span class="tracking-status tracking-status-active"
+              >In Transit</span
+            >
+          </div>
+
+          <div class="tracking-timeline">
+            <div class="tracking-step tracking-step-completed">
+              <div class="step-marker">
+                <svg class="step-check" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="step-connector step-connector-completed"></div>
+              <div class="step-content">
+                <h4 class="step-heading">Order Confirmed</h4>
+                <p class="step-detail">Payment verified via M-Pesa</p>
+                <p class="step-time">Today, 8:15 AM</p>
+              </div>
+            </div>
+
+            <div class="tracking-step tracking-step-completed">
+              <div class="step-marker">
+                <svg class="step-check" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="step-connector step-connector-completed"></div>
+              <div class="step-content">
+                <h4 class="step-heading">Harvesting & Packing</h4>
+                <p class="step-detail">
+                  John Mutua's farm in Machakos is preparing your basket
+                </p>
+                <p class="step-time">Today, 9:30 AM</p>
+              </div>
+            </div>
+
+            <div class="tracking-step tracking-step-active">
+              <div class="step-marker step-marker-pulse">
+                <div class="pulse-ring"></div>
+                <div class="pulse-dot"></div>
+              </div>
+              <div class="step-connector"></div>
+              <div class="step-content">
+                <h4 class="step-heading">In Transit</h4>
+                <p class="step-detail step-detail-highlight">
+                  🚐 Delivery van is 23 minutes away
+                </p>
+                <p class="step-time">Currently on Machakos-Nairobi Highway</p>
+                <div class="tracking-map-mini">
+                  <div class="map-placeholder">
+                    <svg
+                      class="map-icon"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    <span>View on Map</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tracking-step">
+              <div class="step-marker step-marker-pending">4</div>
+              <div class="step-content">
+                <h4 class="step-heading step-heading-pending">Delivered</h4>
+                <p class="step-detail">Estimated arrival: 11:45 AM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tracking-footer">
+            <p class="tracking-note">
+              💡 You'll receive an SMS notification when your order is 5 minutes
+              away
+            </p>
+            <button
+              class="btn btn-secondary track-my-order-btn"
+              onclick="showMessage('Please login to track your orders', 'info')"
+            >
+              Track My Actual Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- END OF NEW SECTIONS -->
+    <!-- ============================================ -->
+
+    <!-- YOUR EXISTING SECTIONS CONTINUE BELOW -->
+    <!-- (farmers-section, testimonials-section, etc.) -->
 
     <footer class="site-footer">
       <div class="container">
@@ -1038,7 +1691,16 @@
           <div class="footer-column">
             <h4 class="footer-heading">Contact Us</h4>
             <ul class="footer-contact">
-              <li>📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7811161e17380d1319151a1916111017161d01561b1756131d">[email&#160;protected]</a></li>
+              <li>
+                <!-- my email is barbarawangui -->
+                📧
+                <a
+                  href="barbarawangui0@gmail.com"
+                  class="__cf_email__"
+                  data-cfemail="7811161e17380d1319151a1916111017161d01561b1756131d"
+                  >[email&#160;protected]</a
+                >
+              </li>
               <li>📱 +254 700 123 456</li>
               <li>📍 Machakos, Kenya</li>
             </ul>
@@ -1046,8 +1708,12 @@
         </div>
 
         <div class="footer-bottom">
-          <p class="payment-info">Secure Payments via M-Pesa, Visa & Mastercard</p>
-          <p class="copyright">&copy; 2025 Ukambani Honey Hub. All Rights Reserved.</p>
+          <p class="payment-info">
+            Secure Payments via M-Pesa, Visa & Mastercard
+          </p>
+          <p class="copyright">
+            &copy; 2025 Ukambani Honey Hub. All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>

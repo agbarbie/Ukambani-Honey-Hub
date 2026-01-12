@@ -1017,3 +1017,92 @@ if (forgotPasswordLink) {
     showMessage('Password reset feature coming soon! Please contact support at info@ukambanihoney.co.ke', 'info');
   });
 }
+
+// ============================================
+// NEW JAVASCRIPT CODE - Enhanced Features
+// ============================================
+
+// ===== NEW: Video Play Button Handler =====
+function playVideo() {
+  showMessage('🎥 Video player coming soon! Connect your actual beekeeping video here.', 'info');
+}
+
+// ===== NEW: Heritage Collection Button Handler =====
+document.addEventListener('DOMContentLoaded', function() {
+  const heritageBtn = document.querySelector('.add-heritage-btn');
+  
+  if (heritageBtn) {
+    heritageBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const heritageProduct = {
+        id: 'heritage-' + Date.now(),
+        name: 'The Heritage Collection - 1kg',
+        price: 'KES 1,800',
+        image: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400&h=300&fit=crop',
+        location: '📍 From Machakos County'
+      };
+      
+      const currentUser = JSON.parse(localStorage.getItem('ukambani_current_user'));
+      
+      if (currentUser) {
+        addToCart(heritageProduct);
+      } else {
+        showMessage('Please login to add items to your cart', 'info');
+        localStorage.setItem('pending_heritage_add', 'true');
+        if (typeof openAuthModal === 'function') {
+          openAuthModal('login');
+        }
+      }
+    });
+  }
+  
+  const pendingHeritage = localStorage.getItem('pending_heritage_add');
+  if (pendingHeritage === 'true') {
+    const currentUser = JSON.parse(localStorage.getItem('ukambani_current_user'));
+    if (currentUser) {
+      const heritageProduct = {
+        id: 'heritage-' + Date.now(),
+        name: 'The Heritage Collection - 1kg',
+        price: 'KES 1,800',
+        image: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400&h=300&fit=crop',
+        location: '📍 From Machakos County'
+      };
+      addToCart(heritageProduct);
+      localStorage.removeItem('pending_heritage_add');
+    }
+  }
+});
+
+// ===== NEW: Product Spotlight Interactions =====
+const storyPoints = document.querySelectorAll('.story-point');
+storyPoints.forEach(point => {
+  point.addEventListener('mouseenter', function() {
+    this.style.backgroundColor = '#fcd34d';
+  });
+  
+  point.addEventListener('mouseleave', function() {
+    this.style.backgroundColor = '#fef3c7';
+  });
+});
+
+// ===== NEW: Flow Diagram Click Handlers =====
+const flowSteps = document.querySelectorAll('.flow-step');
+flowSteps.forEach((step, index) => {
+  step.style.cursor = 'pointer';
+  
+  step.addEventListener('click', function() {
+    const messages = [
+      'Step 1: Browse our products, add to cart, and proceed to secure checkout with M-Pesa or card payment.',
+      'Step 2: Once you order, our farmers carefully harvest and pack your honey fresh from the hive.',
+      'Step 3: Your order is transported in temperature-controlled vehicles to maintain freshness.',
+      'Step 4: Our delivery team brings your Ukambani honey right to your doorstep!'
+    ];
+    
+    showMessage(messages[index], 'info');
+  });
+});
+
+// ===== Console Log for Enhanced Features =====
+console.log('✅ Ukambani Honey Hub - Enhanced features loaded');
+console.log('New features: Product Spotlight, Order Flow, Live Tracking');
